@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+	<head>
+		<title>Cynthia's Library</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="main.css">
+		
+		<script src="jquery-3.1.0.min.js"></script>
+        <script src="bootstrap.js"></script>
+		<script type="text/javascript">
+			$(function() {
+           
+            setInterval("rotateImages()", 2000);
+        });
+
+        function rotateImages() {
+            var oCurPhoto = $('.slideImage .current');
+            var oNxtPhoto = oCurPhoto.next();
+            if (oNxtPhoto.length == 0)
+                oNxtPhoto = $('.slideImage img:first');
+
+            oCurPhoto.removeClass('current').addClass('previous');
+            oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
+                    .animate({ opacity: 1.0 }, 1000,
+                                function() {
+                                    oCurPhoto.removeClass('previous');
+                                });
+        }
+		</script>
+	</head>
+	<body>
+		<header class="container" id="banner">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<i class="fa fa-book fa-4x"></i>
+					<p class="bannertext">
+					把自己认为写得不错的书做了一个书单网页，该页的四本书自己写了一两句简评，还有推荐的虚构与非虚构类书籍。
+					
+					</p>
+				</div>
+			</div>
+		</header>
+		<section class="container content">
+			<div class="row">
+				<div class="col-md-4 slideImage">
+					<img class="current img-rounded" src="image/none.jpg" title="无人生还" alt="无人生还">
+					
+					
+					<img src="image/mocking.jpg" class="img-rounded" title="杀死一只知更鸟" alt="杀死一只知更鸟">
+				</div>
+				<div class="col-md-4 fiction">
+					<h3 class="fictonHead">虚构类</h3>
+					<ol class="fictionList">
+						<li><strong>爱玛</strong> by 简奥斯丁
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">点击查看评价</button>
+                        </li>
+						<li><strong>月亮石</strong> by 柯林斯</li>
+						<li><strong>鲁宾孙漂流记</strong> by 丹尼尔•笛福</li>
+						<li><strong>1984</strong> by 奥威尔</li>
+						<li><strong>高老头</strong> by 雨果</li>
+						<li><strong>狼厅</strong> by 希拉里·曼特尔丁</li>
+						<li><strong>安娜卡列宁娜</strong> by 托尔斯泰</li>
+						<li><strong>月亮与六便士</strong> by 毛姆</li>
+						<li><strong>杀死一只知更鸟</strong> by 哈珀•李</li>
+						<li><strong>自由生活</strong> by 哈金</li>
+						
+					</ol>
+				</div>
+				
+				<div class="col-md-4 nonfiction" >
+					<h3>非虚构类</h3>
+					<ol class="nonfictionList">
+						<li><strong>论美国的民主</strong> by 托克维尔
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#my02Modal">点击查看评价</button>
+                        </li>
+						<li><strong>风格的要素</strong> by威廉•斯特伦克</li>
+						<li><strong>异类</strong> by 马尔科姆•格拉德威尔</li>
+						<li><strong>走出非洲</strong> by 凯伦·布里克森 </li>
+						<li><strong>安琪拉的灰烬</strong> by 弗兰克·迈考特</li>
+						<li><strong>在路上</strong> by杰克·凯鲁亚克 </li>
+						<li><strong>身份的焦虑</strong> by阿兰·德波顿</li>
+						<li><strong>自私的基因</strong> by理查德•道金斯 </li>
+						<li><strong>爱与黑暗的故事</strong> by 阿摩司·奥兹</li>
+						<li><strong>枪炮，细菌，钢铁</strong> by戴蒙德</li>
+					</ol>
+				</div>
+				
+				
+			</div>
+		</section>
+			
+		<section class="container main">
+           
+			<div class="row">
+				<div class="col-md-6 mainImg">
+					<img src="image/emma.jpg" class="img-rounded img-responsive" title="爱玛" alt="爱玛">
+					<img src="image/moonstone.jpg" class="img-rounded img-responsive" title="月亮石" alt="月亮石">
+				</div>
+				<div class="col-md-6">
+                    <h4>月亮石</h4>
+					<p>一个富有的少女在生日当天收到了叔叔赠送的印度名贵宝石:月亮石；但第二天却发现月亮石被盗。 该书被评为第一本悬疑小说，作者与狄更斯是朋友，与他的书一样厚且精彩。不同于后来流行的让人摸不透的悬疑小说。
+						
+					</p>
+                    <h4>爱玛</h4>
+					<p>爱玛喜欢当红娘，但她不了解自己的内心，更何况旁人的.简.奥斯丁最优秀的小说，虽然不及傲慢与偏见风趣，但人物更丰满。
+						
+					</p>
+				</div>
+            </div>            
+        
+			<div class="row">
+				<div class="col-md-6 mainImg">
+					<img src="image/emperor.jpg" class="img-responsive img-rounded" title="众病之王:癌症传" alt="众病之王">
+					<img src="image/democracy.jpg" class="img-responsive img-rounded " title="论美国的民主" alt="论美国的民主">
+				</div>
+				<div class="col-md-6">
+                    <h4>论美国的民主</h4>
+					<p>托克维尔描写十九世纪初美国的社会状况，想向当时的法国人展示民主的益处。 作者写得非常详细易懂，民主不是万能药，但对比之下，是历史到目前产生的最好政治制度。
+						
+					</p>
+                    <h4>众病之王:癌症传</h4>
+					<p>跟书名一致，确实如写人物传记。它也有出生，长大，壮年，但没有死亡，因为我们没有攻克癌症 科普书籍，极少专业词汇，作者文笔很好，跟看小说一样精彩。
+						
+					</p>
+				</div>
+			</div>
+        </section>             
+   
+            <footer class="container ">
+                <div class="row">
+				    <div class="col-sm-6 yoIcons">
+					<a  class="btn btn-success" href="#"><i class="fa fa-weixin fa-2x" aria-hidden="true"></i></a>
+					<a  class="btn btn-success" href="#"><i class="fa fa-qq fa-2x" aria-hidden="true"></i></a>
+					<a  class="btn btn-success" href="#"><i class="fa fa-weibo fa-2x" aria-hidden="true"></i></a>
+				    </div>
+                    <div class="col-sm-6 text-right">
+                        <h3><a href="#banner">顶部</a></h3>
+                    </div>
+                </div>                                                                                    
+			<div class="row">	
+				
+				<div class="col-md-12 text-center copyright">
+				    <i class="fa fa-copyright" aria-hidden="true"></i>2016 Cynthia's Library
+				</div>
+                                
+            </div>     
+		</footer>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">爱玛</h4>
+                         </div>
+                    <div class="modal-body">爱玛喜欢当红娘，但她不了解自己的内心，更何况旁人的.简.奥斯丁最优秀的小说，虽然不及傲慢与偏见风趣，但人物更丰满。
+                         </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        <!-- Modal -->
+        <div class="modal fade" id="my02Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="my02ModalLabel">论美国的民主</h4>
+                         </div>
+                    <div class="modal-body">托克维尔描写十九世纪初美国的社会状况，想向当时的法国人展示民主的益处。 作者写得非常详细易懂，民主不是万能药，但对比之下，是历史到目前产生的最好政治制度。
+                         </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                        
+	</body>
+</html>
