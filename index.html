@@ -15,20 +15,20 @@
 		<script type="text/javascript">
 			$(function() {
            
-            			setInterval("rotateImages()", 2000);
+            			slide("slideImages()", 2000);
         		});
 
-		        function rotateImages() {
-		            var oCurPhoto = $('.slideImage .current');
-		            var oNxtPhoto = oCurPhoto.next();
-		            if (oNxtPhoto.length == 0)
-		                oNxtPhoto = $('.slideImage img:first');
+		        function slideImages() {
+		            var currentPhoto = $('.slideImage .current');
+		            var nextPhoto = currentPhoto.next();
+		            if (nextPhoto.length == 0)
+		                nextPhoto = $('.slideImage img:first');
 		
-		            oCurPhoto.removeClass('current').addClass('previous');
-		            oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
+		            currentPhoto.removeClass('current').addClass('previous');
+		            nextPhoto.css({ opacity: 0.0 }).addClass('current')
 		                    .animate({ opacity: 1.0 }, 1000,
 		                                function() {
-		                                    oCurPhoto.removeClass('previous');
+		                                    currentPhoto.removeClass('previous');
 		                                });
 		        }
 		</script>
@@ -38,7 +38,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<i class="fa fa-book fa-4x"></i>
-					<p class="bannertext">
+					<p class="text-justify bannertext">
 					把自己认为写得不错的书做了一个书单网页，该页的四本书自己写了一两句简评，还有推荐的虚构与非虚构类书籍。
 					
 					</p>
