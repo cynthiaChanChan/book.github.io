@@ -5,10 +5,6 @@ body,.container{
 	background-color:rgba(236,237,221,1.00);
 }
 
-
-	
-
-
 .bannertext{
 	padding:20px 0;
 	vertical-align:bottom;
@@ -18,31 +14,21 @@ body,.container{
 
 .fictionList li{
 	padding-bottom: 20px;
-
-
 }
 
 .nonfictionList li{
 	padding-bottom: 20px;
-
-
 }
 
 .slideImage{
 	padding-top: 50px;
 
 	height: 380px;
-	
 }
-
-
-
 
 .slideImage img{
 	position: absolute;
 	z-index: 0
-	
-
 }
 
 .slideImage .current{
@@ -52,7 +38,6 @@ body,.container{
 .slideImage .previous{
 	z-index: 2
 }
-
 
 
 .main,.content,#banner,footer{
