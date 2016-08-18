@@ -3,6 +3,7 @@
 	<head>
 		<title>Cynthia's Library</title>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap.css">
 		<link rel="stylesheet" href="font-awesome.css">
@@ -10,26 +11,26 @@
 		<link rel="stylesheet" href="main.css">
 		
 		<script src="jquery-3.1.0.min.js"></script>
-        <script src="bootstrap.js"></script>
+        	<script src="bootstrap.js"></script>
 		<script type="text/javascript">
 			$(function() {
            
-            setInterval("rotateImages()", 2000);
-        });
+            			setInterval("rotateImages()", 2000);
+        		});
 
-        function rotateImages() {
-            var oCurPhoto = $('.slideImage .current');
-            var oNxtPhoto = oCurPhoto.next();
-            if (oNxtPhoto.length == 0)
-                oNxtPhoto = $('.slideImage img:first');
-
-            oCurPhoto.removeClass('current').addClass('previous');
-            oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
-                    .animate({ opacity: 1.0 }, 1000,
-                                function() {
-                                    oCurPhoto.removeClass('previous');
-                                });
-        }
+		        function rotateImages() {
+		            var oCurPhoto = $('.slideImage .current');
+		            var oNxtPhoto = oCurPhoto.next();
+		            if (oNxtPhoto.length == 0)
+		                oNxtPhoto = $('.slideImage img:first');
+		
+		            oCurPhoto.removeClass('current').addClass('previous');
+		            oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
+		                    .animate({ opacity: 1.0 }, 1000,
+		                                function() {
+		                                    oCurPhoto.removeClass('previous');
+		                                });
+		        }
 		</script>
 	</head>
 	<body>
