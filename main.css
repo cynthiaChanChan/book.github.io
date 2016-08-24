@@ -29,6 +29,8 @@ body,.container{
 .slideImage img{
 	position: absolute;
 	z-index: 0
+	width:215px;
+	height:346px;
 }
 
 .slideImage .current{
