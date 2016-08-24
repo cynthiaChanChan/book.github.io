@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+	<head>
+		<title>Cynthia's Library</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="书籍，虚构类，非虚构类，简•奥斯丁">
+		<meta name="description" content="书籍推荐">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="font-awesome.css">
+		
+		<link rel="stylesheet" href="main.css">
+		
+        	<!--IE8 Support-->
+	        <!--[if lt IE 9]-->
+	        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	        <!--[endif]-->
+		
+	</head>
+	<body>
+		<header class="container" id="banner">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<i class="fa fa-book fa-4x"></i>
+					<p class="bannertext">
+					把自己认为不错的书做了一个书单网页。
+					
+					</p>
+				</div>
+				
+			</div>
+		</header>
+        <div class="row" id="mainContent">
+            <div class="col-md-12 text-center">
+                <h1 id="pageID">联系我们</h1>
+                <p>请给一些意见，我们会做的更好!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+         
+                <form class="text-center" id="frmContact" name="frmContact" >
+                    <fieldset id="personalInfo">
+                    <legend><strong>您的个人信息</strong></legend>
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input name="name" type="text" class="form-control" id="name" >
+                    </div>
+                    <div class="form-group">
+                      <label for="name">邮箱地址</label>
+                      <input name="name" type="text" class="form-control" id="email" >
+                    </div>
+                    <div class="form-group">
+                      <label for="name">手机号码</label>
+                      <input name="name" type="text" class="form-control" id="phone" >
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-group">
+                      <label for="comments">您的意见</label><br />
+                      <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                   <button id="submitbtn" type="submit" class="btn btn-default">提交</button>
+                  </fieldset>
+                </form>
+            </div>
+     </div>
+         <footer class="container ">
+               	<div class="row">	
+		          <div class="col-md-6 text-center copyright">
+		    	     <i class="fa fa-copyright" aria-hidden="true"></i>2016 Cynthia's Library
+		          </div>
+                    <div class="col-md-6 text-center">
+                        <a href="index.html"><strong>主页</strong></a>
+                    </div>
+                </div>
+        </footer>     
+        
+    <script>
+       var myButton=document.getElementById("submitbtn") ;
+        
+        myButton.onclick=function(){
+            alert("谢谢参与！");
+        }
+    </script>
+    </body>
+</html>
