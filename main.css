@@ -100,3 +100,7 @@ li .btn{
 #frmContact {
     margin: 20px auto;
 }
+
+#banner,footer {
+    border-radius:10px;	
+}
