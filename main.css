@@ -47,10 +47,6 @@ body,.container{
 	
 }
 
-#banner{
-	background-color: #1fa67a;
-	color: white;
-}
 
 .mainImg{
 	display:flex;
@@ -101,7 +97,7 @@ li .btn{
     margin: 20px auto;
 }
 
-#banner,footer {
+footer {
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     border-radius:10px;	
