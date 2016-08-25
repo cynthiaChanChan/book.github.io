@@ -41,7 +41,7 @@ body,.container{
 }
 
 
-.main,.content,#banner,footer,#frmContact,{
+.main,.content,#banner,footer,#frmContact{
 	max-width: 960px;
 	margin:5px auto;
 	
