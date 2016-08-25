@@ -75,11 +75,9 @@ footer{
 	font-weight: bold;
 }
 
-.btn{
+.fa-book,pageID{
     background-color:#1fa67a;
-    
-    border-style: none;
-}
+    }
 
 .text-right h3 {
     
